@@ -6,3 +6,8 @@
 # Mac OS System
 .DS_Store*
 ._*
+
+# IntelliJ Artifacts
+/.idea/
+/out/
+Simple-Java-Calculator.iml

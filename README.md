@@ -1,55 +1,71 @@
-<div align="center">
+# Input Domain Modeling
 
-# Simple Java Calculator
+## Function: `calculateMono(MonoOperatorModes newMode, Double num)`
 
-![Logo Simple Java Calculator](logo.png)
+### Information
+
+- Parameters: `MonoOperatorModes`, `Double`
+- Return Type: `Double`
+- Return Value: Calculation result depends on operator mode.
+- Exceptional Behavior: `throw new Error();` if mode is invalid. 
+
+### Testing Goal
+
+The testing goal for the calculateMono function is to verify that it correctly performs various mathematical operations based on the provided `MonoOperatorModes` and input number `num`, ensuring accuracy, error handling, and edge case coverage.
+
+### Functionality-Based IDM
+
+| Characteristics                                      | B1               | B2                    | B3                         | B4            | B5            | B6            | B7            | B8           | B9             | B10                |
+|------------------------------------------------------|------------------|-----------------------|----------------------------|---------------|---------------|---------------|---------------|--------------|----------------|--------------------|
+| C1: Calculation Result Based On Different Operations | Result of Square | Result of Square Root | Result of Reciprocal (1/n) | Result of Cos | Result of Sin | Result of Tan | Result of Log | Result of Ln | Result of Rate | Result of Absolute |
+
+### Interface-Based IDM
+
+| Characteristics          | B1                      | B2    | B3                      |
+|--------------------------|-------------------------|-------|-------------------------|
+| C1: Mode is null         | True                    | False |                         |
+| C2: Refinement of Number | Positive Decimal Number | Zero  | Negative Decimal Number |
+
+### Combine Partitions
+
+*TO DO*
+
+### Derived Test Values
+
+*TO DO*
 
 ---
 
-This calculator is **simple** with an **easy to use code** to help novices **learn how to create a calculator** program with **`Java`**.
+## Function: `calculateBI(BiOperatorModes newMode, Double num)`
 
----
+### Information
 
-</div>
+- Parameters: `BiOperatorModes`, `Double`
+- Return Type: `Double`
+- Return Value: Calculation result depends on operator mode.
+- Exceptional Behavior: `throw new Error();` if mode is invalid.
 
-This project was **originally written using `Eclipse`**, but I have **migrated it to NetBeans**.
+### Testing Goal
 
-If you use the executable "SimpleJavaCalculator.jar" file and that doesn't work, you can type this in your terminal:
+The testing goal for the calculateBi function is to ensure that it accurately performs mathematical operations based on the provided `BiOperatorModes`, input numbers `num1` and `num2`, and updates the object's internal state accordingly.
 
-```shell
-java -jar /your_calculator_directory/SimpleJavaCalculator.jar`
-```
+### Functionality-Based IDM
 
-## :sparkles: Example
+| Characteristics                                      | B1                 | B2                    | B3                       | B4                 | B5                     |
+|------------------------------------------------------|--------------------|-----------------------|--------------------------|--------------------|------------------------|
+| C1: Calculation Result Based On Different Operations | Result of Addition | Result of Subtraction | Result of Multiplication | Result of Division | Result of X Power of Y |
 
-![Example: Java Calculator](Screenshots/screenshot.png)
+### Interface-Based IDM
 
-## You might also like :monocle_face:
+| Characteristics          | B1                      | B2    | B3                      |
+|--------------------------|-------------------------|-------|-------------------------|
+| C1: Mode is null         | True                    | False |                         |
+| C2: Refinement of Number | Positive Decimal Number | Zero  | Negative Decimal Number |
 
-**[My Simple Java Text Editor](https://github.com/pH-7/Simple-Java-Text-Editor).**
+### Combine Partitions
 
-[![Open-Source Simple Java Text Editor](https://github.com/pH-7/Simple-Java-Text-Editor/blob/master/Screenshots/find-replace-word-in-java-text-editor.png)](https://github.com/pH-7/Simple-Java-Text-Editor "Open-Source Simple Java Text Editor")
+*TO DO*
 
+### Derived Test Values
 
-## 💡 Authors
-
-### Base Application
-
-- **[Pierre-Henry Soria](https://ph7.me)**
-
-### Modifications and Improvements
-
-- [Achintha Gunasekara](http://www.achinthagunasekara.com)
-- [xdvrx1](https://github.com/xdvrx1)
-
-
-## 📮 Contact
-
-Pierre-Henry Soria: pierrehs [AT] hotmail [D0T] com
-
-Achintha Gunasekara: contact [AT] achinthagunasekara [D0T] com
-
-
-## ⚖️ License
-
-Apache License, Version 2.0 or later; Read **[license.txt](./license.txt)** for further details.
+*TO DO*
